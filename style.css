@@ -1,2 +1,209 @@
-body{
-    background-color: bisque;  } 
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    display: grid;
+    grid-template: auto auto 60px / repeat(3, 1fr);
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 1024px;
+}
+
+body  header {
+    grid-column: 1 / span 3;
+    grid-row: 1;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    background-color: cornflowerblue;
+}
+
+body  header  h1 {
+    font-size: 3rem;
+    margin: 10px;
+}
+
+body > header > ul {
+    display: flex;
+    list-style: none;
+}
+ header ol {
+    padding-left: 40px;
+ }
+body > header > ul > li {
+    margin: 0px 10px;
+}
+
+body > header > p {
+    display: flex;
+    margin: 0px 10px;
+    margin-left: auto;
+}
+
+body > main {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    border-width: 0px 0px 0px 1px;
+    border-color: black;
+    border-style: dotted;
+    background-color: bisque;
+}
+
+body > main.login {
+    grid-column: 1 / span 3;
+    border-width: 0px 1px 0px 1px;
+    display: grid;
+    grid-template: 30px auto auto 30px / auto auto auto;
+    justify-content: center;
+}
+
+body > main > h2 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+body > main > h2.login {
+    grid-column: 2;
+    grid-row: 2;
+    margin: 10px 0px 10px 0px;
+    text-transform: uppercase;
+}
+
+body > main > p {
+    margin: 10px;
+}
+
+body > main > section {
+    display: flex;
+    flex-direction: row;
+}
+
+body > main > section > article {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    border-width: 1px;
+    border-color: black;
+    border-style: dotted;
+    padding: 10px;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(101, 216, 162);
+}
+
+body > main > section > article > h3 {
+    font-size: 1.25rem;
+    margin: 0px 0px 10px 0px;
+}
+
+body > main > section > article > p {
+    margin: 10px 0px;
+}
+
+body > main > section > article > img {
+    display: flex;
+    margin: 10px 0px 0px 0px;
+    width: 100%;
+}
+
+body > main > form {
+    grid-column: 2;
+    grid-row: 3;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    border-radius: 5px;
+    background-color: lightyellow;
+}
+
+body > main > form > input[type="text"] {
+    margin: 10px;
+    border-width: 1px;
+    border-color: darkgrey;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+}
+
+body > main > form > input[type="password"] {
+    margin: 10px 10px 10px 0px;
+    border-width: 1px;
+    border-color: darkgrey;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: white;
+}
+
+body > main > form > input[type="reset"] {
+    margin: 10px 10px 10px 0px;
+    border-width: 1px;
+    border-color: darkred;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: tomato;
+}
+
+body > main > form > input[type="submit"] {
+    margin: 10px 10px 10px 0px;
+    border-width: 1px;
+    border-color: darkgreen;
+    border-style: solid;
+    border-radius: 3px;
+    padding: 5px;
+    background-color: yellowgreen;
+}
+
+ /* for city */
+body > aside {
+    padding-left: 40px;
+    grid-column: 3;
+    grid-row: 2;
+    display: flex;
+    flex-direction: column;
+    border-width: 0px 1px;
+    border-color: black;
+    border-style: dotted;
+    background-color: palegreen;
+}
+
+body > aside > h3 {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+body > aside > ul {
+    margin: 10px 10px 10px 30px;
+}
+
+body  aside  ul  li  ol {
+    margin: 10px 10px 10px 20px;
+}
+
+body > footer {
+    grid-column: 1 / span 3;
+    grid-row: 3;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 10px;
+    background-color: rgb(114, 22, 133);
+}

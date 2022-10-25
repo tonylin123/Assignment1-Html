@@ -54,7 +54,19 @@ header > h1{
     margin: 0px;
    
 }
-
+body h2 {
+    width: 200px;
+    background-color: rgb(237, 200, 100);
+    border-style: solid;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 30px;
+    margin: 1px;
+    border-width: 1px;
+    border-color: black;
+    border-style: solid;
+}
 a {
     text-decoration:none;
     margin-left: auto;

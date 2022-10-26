@@ -39,7 +39,7 @@ header > h1{
    
 }
 body h2 {
-    width: 200px;
+    width: 180px;
     background-color: rgb(237, 200, 100);
     border-style: solid;
     display: flex;
@@ -65,10 +65,9 @@ a {
 header > nav > ul > li{
     list-style-type: none;
     text-align: center;
-    margin-right: auto;
     float:left;
     margin-left: 0px;
-    margin-right: 2px;
+    margin-right: 0px;
     height: 40px;
     width: 130px;
     border-width: 1px;
@@ -116,7 +115,7 @@ body > main > h2 {
 body > main > section > article {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
     border-width: 1px;
     border-color: black;
     border-style: solid;
@@ -233,7 +232,7 @@ body main div{
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: auto;
     width: 50%;
     background-color: lightyellow;
     flex-wrap: wrap;
